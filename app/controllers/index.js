@@ -21,7 +21,7 @@ function renderData(data){
     getElementQuery("#tblDanhSachSP").innerHTML=html;
 }
 function getListProduct(){
-    service.getListProductApi()
+    service.getListProductApi() 
     .then(function(result){
         renderData(result.data)
     })
