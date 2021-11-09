@@ -12,6 +12,10 @@ function renderData(data){
         <td><img style="width:100px" src="../../assets/img/${item.hinhAnh}" alt=""></td>
         <td>${item.moTa}</td>
         <td>${item.action}</td>
+        <td>
+        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-info">Edit</button>
+        </td>
       </tr>`
     });
     getElementQuery("#tblDanhSachSP").innerHTML=html;
